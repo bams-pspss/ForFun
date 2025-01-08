@@ -61,9 +61,9 @@ h1 {
 }
 
 #rwd {
-    width: 900px; /* Set appropriate width */
+    width: 640px; /* Set appropriate width */
     height: auto;
     position: absolute;
-
+    display: none;
     z-index: 10; /* Make sure it shows on top of other elements */
 }
