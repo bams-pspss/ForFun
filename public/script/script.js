@@ -5,6 +5,7 @@ let restart = document.getElementById("rst");
 let colorCode = document.getElementById("cc");
 let reward = document.getElementById("rwd");
 
+//I hope this work
 
 function getRandomColor() {
     // Generate a random color in hexadecimal format
