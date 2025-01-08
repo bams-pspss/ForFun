@@ -40,6 +40,12 @@ button.addEventListener("click", function() {
 restart.addEventListener("click", function() {
     reward.style.display = "flex";
     reward.play();
+
+    restart.innerHTML = "Play Again";
+    restart.addEventListener("click", function(){
+        location.reload();
+    });
+
 });
 
 function foundBlack() {
