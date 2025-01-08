@@ -5,7 +5,10 @@
         "src": "view/index.html",
         "use": "@vercel/static"
       }
-    ]
+    ],
+    "env": {
+        "NODE_ENV": "production"
+    }
   }
 
   
