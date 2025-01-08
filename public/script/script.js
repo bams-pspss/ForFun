@@ -18,7 +18,7 @@ let count = 0;
 
 button.addEventListener("click", function() {
     let randomColor = getRandomColor();
-    if (count == 5) {
+    if (count == 10) {
         randomColor = '#000000';
     }
 
