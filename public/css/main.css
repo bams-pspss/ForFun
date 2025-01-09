@@ -1,0 +1,40 @@
+/* Global styles */
+body {
+    background-color: bisque;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+/* Styling the links */
+a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    margin: 10px;
+    background-color: #ff6347;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Hover effects */
+a:hover {
+    background-color: #8cff09;
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    a {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+}
