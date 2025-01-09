@@ -1,15 +1,18 @@
-body{
+/* Ensure the body takes up the full screen */
+body {
     background-color: pink;
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center; */
-    
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Remove default margin */
+    flex-direction: column; /* Stack elements vertically for small screens */
+    text-align: center;
 }
 
-/* Centering the spinner */
+/* Center the loading container */
 .loading {
     text-align: center;
-    margin-top: 20px;
 }
 
 /* Spinner design */
@@ -27,4 +30,59 @@ body{
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+/* Responsive font size for headings */
+h1, h2 {
+    font-size: 4rem;
+    margin: 10px 0;
+}
+label {
+    font-size: 2rem;
+}
+
+/* Input fields responsive styling */
+input[type="text"], input[type="submit"] {
+    width: 80%; /* Adjust width for smaller screens */
+    max-width: 300px; /* Prevent input from becoming too wide */
+    padding: 10px;
+    margin: 10px auto;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Fullscreen container for intro and container sections */
+#intro, #container {
+    text-align: center;
+    padding: 20px;
+    width: 100%; /* Ensure full width for smaller screens */
+    max-width: 500px; /* Prevent content from being too wide */
+}
+
+/* Make iframe responsive */
+iframe {
+    width: 90%;
+    max-width: 560px;
+    height: auto;
+    aspect-ratio: 16/9; /* Maintain 16:9 aspect ratio */
+    margin: 20px auto;
+    display: block;
+}
+
+/* Adjust spinner size for smaller screens */
+@media (max-width: 768px) {
+    .spinner {
+        width: 40px;
+        height: 40px;
+        border-width: 4px;
+    }
+
+    h1, h2 {
+        font-size: 2rem;
+    }
+    label {
+        font-size: 1rem;
+    }
 }

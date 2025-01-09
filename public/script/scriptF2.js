@@ -24,16 +24,12 @@ document.querySelector('input[type="submit"]').addEventListener('click', (event)
             container.style.display = "block";
             answer.textContent = ` ${userInput}!`;
             
-            //Surprise
-            setTimeout(() => {
-                let iframe = document.querySelector("iframe");
-                let videoSrc = iframe.getAttribute("src");
-                iframe.setAttribute("src", `${videoSrc}&autoplay=1`);
-             }, 1000);
-
-
+            //Autoplay
+            let iframe = document.querySelector("iframe");
+            let videoSrc = iframe.getAttribute("src");
+            iframe.setAttribute("src", `${videoSrc}&autoplay=1`);
 
         }, 2000); 
-        answer.textContent = "Please enter a valid number.";
+        answer.textContent = "NUMBER ONLY";
     }
 });
