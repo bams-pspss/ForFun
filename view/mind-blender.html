@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Reader</title>
+
+    <link rel="stylesheet" href="/public/css/mystyleF2.css">
+</head>
+<body>
+    <div id="intro">
+        <h1>I can read your Mind</h1>
+        <label for="input">What number are you thinking?</label><br>
+        <input type="text" id="input" name="input"><br><br>
+        <input type="submit" value="Submit">
+    </div>
+
+
+    <div class="loading" id="loading" style="display: none;">
+        <h2>Reading your mind...</h2>
+        <div class="spinner"></div>
+    </div>
+    
+    <div id="container" style="display: none;">
+        <h1>Number You're Thinking is</h1>
+        <h2 id="answer"></h2>
+    </div>
+
+    <script src="/public/script/scriptF2.js"></script>
+</body>
+</html>
