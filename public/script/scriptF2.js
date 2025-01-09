@@ -25,9 +25,9 @@ document.querySelector('input[type="submit"]').addEventListener('click', (event)
             answer.textContent = ` ${userInput}!`;
             
             //Surprise
-            setTimeout(() => {
-                window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
-            }, 1000);
+            // setTimeout(() => {
+            //     window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+            // }, 1000);
 
 
 
