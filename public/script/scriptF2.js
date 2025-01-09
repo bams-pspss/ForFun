@@ -25,9 +25,11 @@ document.querySelector('input[type="submit"]').addEventListener('click', (event)
             answer.textContent = ` ${userInput}!`;
             
             //Surprise
-            // setTimeout(() => {
-            //     window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
-            // }, 1000);
+            setTimeout(() => {
+                let iframe = document.querySelector("iframe");
+                let videoSrc = iframe.getAttribute("src");
+                iframe.setAttribute("src", `${videoSrc}&autoplay=1`);
+             }, 1000);
 
 
 
